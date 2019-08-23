@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://remotemysql.com:3306/8cZ0OoQPqb</property>
+        <property name="connection.username">8cZ0OoQPqb</property>
+        <property name="connection.password">g8MSbcYkiq</property>
+
+        <property name="show_sql">true</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+
+        <mapping class="ee.sda.hibernate.entities.User"/>
+        <mapping class="ee.sda.hibernate.entities.TimeTest"/>
+        <mapping class="ee.sda.hibernate.entities.Bank"/>
+        <mapping class="ee.sda.hibernate.entities.Credential"/>
+        <mapping class="ee.sda.hibernate.entities.Account"/>
+        <mapping class="ee.sda.hibernate.entities.Transaction"/>
+        <mapping class="ee.sda.hibernate.entities.Budget"/>
+        <mapping class="ee.sda.hibernate.entities.Currency"/>
+        <mapping class="ee.sda.hibernate.entities.Market"/>
+        <mapping class="ee.sda.hibernate.entities.Stock"/>
+        <mapping class="ee.sda.hibernate.entities.Bond"/>
+        <mapping class="ee.sda.hibernate.entities.Portfolio"/>
+        <mapping class="ee.sda.hibernate.entities.UserCredentialView"/>
+
+    </session-factory>
+</hibernate-configuration>
